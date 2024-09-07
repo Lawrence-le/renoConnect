@@ -1,0 +1,25 @@
+meta {
+  name: show details
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/projects/:projectId
+  body: json
+  auth: bearer
+}
+
+params:path {
+  projectId: 66d6ba062fc4327fb2e6564a
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im93ZW4iLCJfaWQiOiI2NmQ1OGVlZWU5ZjdhOGM4NzE1YjZlNTAiLCJpYXQiOjE3MjUzNDg3OTcsImV4cCI6NDg4MTEwODc5N30.6knE-X7ICD8PzDUTutjlcGw1QQZRdfwhyhA8A2re90U
+}
+
+body:json {
+  {
+    "Total Phases": 5
+  }
+}
