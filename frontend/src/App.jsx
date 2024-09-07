@@ -61,7 +61,7 @@ function App() {
             <div>
               <div className="homeSection">
                 <img
-                  src={bgImage}
+                  // src={bgImage}
                   alt="Background"
                   className="background-image"
                 />
