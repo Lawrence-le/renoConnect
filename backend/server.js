@@ -46,9 +46,9 @@ app.use("/api/phases", phasesRouter);
 app.use("/api/projects", projectRouter);
 
 // Serve React frontend for any other requests
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+// });
 
 app.listen(port, () => {
   debug(`Example app listening on port ${port}`);
